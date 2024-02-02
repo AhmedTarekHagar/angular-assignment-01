@@ -1,0 +1,9 @@
+header {
+    height: 80vh;
+    background-image: url('../../assets/images/hero-placeholder.png');
+    background-size: cover;
+}
+
+div {
+    height: 100%;
+}

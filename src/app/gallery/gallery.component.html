@@ -1,0 +1,18 @@
+<section>
+    <div class="container">
+        <div class="row" *ngIf="gallery.length > 0; else noProducts">
+            <div *ngFor="let item of gallery"
+                class="item col-lg-3 col-md-4 col-sm-6 overflow-hidden text-center text-secondary-emphasis fw-bold fs-3">
+                <div class="inner rounded">
+                    <p>{{item.title}}</p>
+                    <img [src]="item.img">
+                    <p>{{item.description}}</p>
+                    <p>{{item.price}}</p>
+                </div>
+            </div>
+        </div>
+        <ng-template #noProducts>
+            <div class="fs-1 text-center text-danger fw-bolder">No Products Found</div>
+        </ng-template>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+.inner {
+    background-color: #21252925;
+    transition: all .5s;
+}
+
+.inner:hover {
+    background-color: #21252950;
+}
+
+.inner img {
+    width: 75%;
+    transition: all .5s;
+}
+
+.inner:hover img {
+    width: 100%;
+}
